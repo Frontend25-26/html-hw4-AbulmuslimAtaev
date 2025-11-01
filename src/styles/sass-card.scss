@@ -1,0 +1,73 @@
+$green: #4caf50;
+$dark-green: #388e3c;
+$light-green: #e8f5e9;
+$spacing: 25px;
+
+.card-sass {
+    border: 3px solid $green;
+}
+
+.card-header-sass {
+    background: $green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.cat-img-sass {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background: $light-green;
+    padding: 20px;
+}
+
+.card-body-sass {
+    padding: $spacing;
+
+    h3 {
+        color: $green;
+        margin-bottom: 10px;
+    }
+}
+
+.age-sass {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.description-sass {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.buttons-sass button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-like-sass {
+    background: white;
+    color: $green;
+    border: 2px solid $green;
+
+    &:hover {
+        background: $green;
+        color: white;
+    }
+}
+
+.btn-pet-sass {
+    background: $green;
+    color: white;
+
+    &:hover {
+        background: $dark-green;
+        transform: scale(1.05);
+    }
+}
