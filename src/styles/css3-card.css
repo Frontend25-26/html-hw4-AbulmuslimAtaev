@@ -13,6 +13,7 @@
     text-align: center;
     padding: 10px;
     font-weight: bold;
+    border-radius: 5px 5px 0 0;
 }
 
 .card-css3-img {
@@ -25,11 +26,11 @@
 
 .card-css3-body {
     padding: 25px;
-}
 
-.card-css3-body h3 {
-    color: var(--blue);
-    margin-bottom: 10px;
+    & h3 {
+        color: var(--blue);
+        margin-bottom: 10px;
+    }
 }
 
 .card-css3-age {
@@ -43,31 +44,36 @@
     margin-bottom: 20px;
 }
 
-.card-css3 button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s;
+.card-css3-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 .card-css3-btn-like {
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
     background: white;
     color: var(--blue);
     border: 2px solid var(--blue);
-}
 
-.card-css3-btn-like:hover {
-    background: var(--blue);
-    color: white;
+    &:hover {
+        background: var(--blue);
+        color: white;
+    }
 }
 
 .card-css3-btn-pet {
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
     background: var(--blue);
     color: white;
-}
+    border: none;
 
-.card-css3-btn-pet:hover {
-    background: #1976d2;
-    transform: scale(1.05);
+    &:hover {
+        background: #1976d2;
+        transform: scale(1.05);
+    }
 }
