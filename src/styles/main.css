@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#667eea, #764ba2);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-css3,
+.card-sass {
+    width: 350px;
+    background: white;
+    border-radius: 5px;
+}

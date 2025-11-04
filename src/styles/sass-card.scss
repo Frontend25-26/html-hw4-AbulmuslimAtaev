@@ -1,0 +1,78 @@
+$green: #4caf50;
+$dark-green: #388e3c;
+$light-green: #e8f5e9;
+$spacing: 25px;
+
+.card-sass {
+    border: 2px solid $green;
+
+    &__header {
+        background: $green;
+        color: white;
+        text-align: center;
+        padding: 8px;
+        font-weight: bold;
+    }
+
+    &__img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        background: $light-green;
+        padding: 20px;
+    }
+
+    &__body {
+        padding: $spacing;
+
+        h2 {
+            color: $green;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__age {
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    &__btn-like {
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: all 0.3s;
+        background: white;
+        color: $green;
+        border: 2px solid $green;
+
+        &:hover {
+            background: $green;
+            color: white;
+        }
+    }
+
+    &__btn-pet {
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: all 0.3s;
+        background: $green;
+        color: white;
+        border: none;
+
+        &:hover {
+            background: $dark-green;
+            transform: scale(1.05);
+        }
+    }
+}
